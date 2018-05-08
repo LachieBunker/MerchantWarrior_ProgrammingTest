@@ -1,4 +1,4 @@
 <?php
-    echo"Getting file";
+    printf("Getting file");
     require 'payment.html';
 ?>
