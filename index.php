@@ -1,4 +1,4 @@
 <?php
     printf("Getting file");
-    require 'payment.html';
+    require 'https://github.com/LachieBunker/MerchantWarrior_ProgrammingTest/payment.html';
 ?>
