@@ -2,10 +2,73 @@
 
 <head>
     <title>Payment</title>
+    <link type="text/css" rel="stylesheet" href="main.css" />
 </head>
 
-<body>
-    <p>
+<header class="mw_header">
+    <h1>
+        Merchant
+    </h1>
+    <h2>
+        Warrior
+    </h2>
+</header>
+
+<body class="mw_body">
+    <h1>
         Payment form
-    </p>
+    </h1>
+    <form action="index.php" method="post">
+        <h4>Amount</h4>
+        <input type="number" name="amount">
+        <input type="text" name="currency" value="AUD" disabled style="width:5%">
+        <h4> Product </h4>
+        <input type="text" name="product" value="Test Product" readonly>
+
+        <div>
+            <div style="width:30%">
+                <h4>Name</h4>
+                <input type="text" name="name" style="width:100%">
+            </div>
+            <div style=" width:40%">
+                <h4>Address</h4>
+                <input type="text" name="address" style="width:100%">
+            </div>
+            <div style="display:inline-block">
+                <h4>City</h4>
+                <input type="text" name="city">
+            </div>
+            <div style="display:inline-block">
+                <h4>State</h4>
+                <input type="text" name="state">
+            </div><br>
+            <div style="display:inline-block">
+                <h4>Country</h4>
+                <input type="text" name="country">
+            </div>
+            <div style="display:inline-block">
+                <h4>PostCode</h4>
+                <input type="number" name="postCode">
+            </div>
+        </div>
+        <div>
+            <div style="width:30%">
+                <h4>Card Name</h4>
+                <input type="text" name="c_name" style="width:100%">
+            </div>
+            <div style="width:30%">
+                <h4>Card Number</h4>
+                <input type="number" name="c_number" style="width:100%">
+            </div>
+            <div style="display:inline-block">
+                <h4>Card Expiry</h4>
+                <input type="number" name="c_expiry">
+            </div>
+        </div>
+
+
+        <br><input type="submit">
+            Submit
+        </input>
+    </form>
 </body>
